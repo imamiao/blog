@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `清风朗月`,
+    title: `YMBlog`,
     image: "/gatsby-icon.png",
-    description: `Gatsby Starter Breeze`,
-    siteUrl: `https://gatsby-starter-breeze.netlify.app/`,
+    description: `YM's Blog`,
+    siteUrl: `https://imamiao.github.io/`,
     social: {
       douban: "#",
       email: "#",
