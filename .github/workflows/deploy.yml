@@ -22,7 +22,7 @@ jobs:
       - name: Pre-Build
         shell: bash
         run: |
-          git config --global user.email "zhaoyimingg@gmail.com" && git config --global user.name "YM" && npm install 
+          git config --global user.email "zhaoyimingg@gmail.com" && git config --global user.name "YM" && npm install -g
       
       - name: Build
         run: gatsby build
