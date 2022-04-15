@@ -21,10 +21,16 @@ jobs:
 
       - name: Pre-Build
         shell: bash
-        env:
-          SUPER_SECRET: ${{ secrets.DEPLOY_KEY }}
         run: |
-          echo $SUPER_SECRET && git config --global user.email "zhaoyimingg@gmail.com" && git config --global user.name "YM" && npm install 
-
-      - name: Build project And deploy
-        run:  npm run deploy
+          git config --global user.email "zhaoyimingg@gmail.com" && git config --global user.name "YM" && npm install 
+      
+      - name: Build
+        run: gatsby build
+        
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.DEPLOY_KEY }}
+          external_repository: imamiao/imamiao.github.io
+          publish_branch: master
+          publish_dir: ./public
