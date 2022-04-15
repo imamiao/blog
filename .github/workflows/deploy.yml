@@ -11,13 +11,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [14.x]
     steps:
-      - uses: actions/checkout@v1
-      - uses: enriikke/gatsby-gh-pages-action@v2
+      - uses: actions/checkout@v1 # Checkout your triggered branch
+      - uses: xmflsct/action-publish-gatsby@v1 # Uses this action to run further steps
         with:
-          access-token: ${{ secrets.ACCESS_GITHUB_API_TOKEN }} // 自定义 scret name
-          deploy-branch: master
-          deploy-repo: imamiao.github.io // 留神这里间接是仓库名称
+          publishBranch: 'master' # Not required, default publishing branch is master
+          token: ${{ secrets.ACCESS_GITHUB_API_TOKEN }} # Your personal access token of GitHub, read more below of how to obtain one and keep it safe

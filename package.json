@@ -40,6 +40,7 @@
     "react-icons": "^3.11.0"
   },
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "prettier": "2.1.0"
   },
   "homepage": "https://github.com/keithnull/gatsby-starter-breeze",
@@ -59,6 +60,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "deploy": "gatsby build && gh-pages -d public -b master --repo https://${{ secrets.ACCESS_GITHUB_API_TOKEN }}github.com/imamiao/imamiao.github.io.git"
   }
 }
