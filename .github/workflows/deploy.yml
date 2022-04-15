@@ -12,8 +12,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1 # Checkout your triggered branch
-      - uses: xmflsct/action-publish-gatsby@v1.0.0 # Uses this action to run further steps
+      - uses: actions/checkout@v1
+      - uses: imamiao/gatsby-gh-pages-action@1d0bce8
         with:
-          publishBranch: 'master' # Not required, default publishing branch is master
-          token: ${{ secrets.ACCESS_GITHUB_API_TOKEN }} # Your personal access token of GitHub, read more below of how to obtain one and keep it safe
+          access-token: ${{ secrets.ACCESS_GITHUB_API_TOKEN }} // 自定义 scret name
+          deploy-branch: master
+          deploy-repo: imamiao.github.io // 留神这里间接是仓库名称
