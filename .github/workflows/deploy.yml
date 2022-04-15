@@ -22,12 +22,8 @@ jobs:
       - name: Pre-Build
         shell: bash
         run: |
-          git config --global user.email "zhaoyimingg@gmail.com" && git config --global user.name "YM" && npm install -g
+          git config --global user.email "zhaoyimingg@gmail.com" && git config --global user.name "YM" && npm install -g && npm run build
       
-      - name: Build
-        shell: bash
-        run: gatsby build
-        
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
