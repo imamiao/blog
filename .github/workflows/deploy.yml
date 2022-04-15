@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: imamiao/gatsby-gh-pages-action@1d0bce8
+      - uses: imamiao/gatsby-gh-pages-action@1d0bce83f61135cf1ef2511ccda7e25c1992d2c1
         with:
           access-token: ${{ secrets.ACCESS_GITHUB_API_TOKEN }} // 自定义 scret name
           deploy-branch: master
