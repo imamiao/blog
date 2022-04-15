@@ -13,13 +13,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
+        env:
+          SUPER_SECRET: ${{ secrets.DEPLOY_KEY }}
+        run: echo $SUPER_SECRET
 
       - name: Setup node
         uses: actions/setup-node@v1
         with:
           node-version: "14.x"
 
+      - name: Pre-Build
+        run: git config --global user.email "zhaoyimingg@gmail.com" && git config --global user.name "YM"
+
       - name: Build project And deploy
-        env:
-          SUPER_SECRET: ${{ secrets.ACCESS_GITHUB_API_TOKEN }}
-        run: npm install && npm run deploy
+        run:  npm install && npm run deploy

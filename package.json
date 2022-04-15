@@ -61,6 +61,6 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy": "git config --global user.email zhaoyimingg@gmail.com && git config --global user.name YM && gatsby build && gh-pages -d public -b master --repo https://$SUPER_SECRET@github.com/imamiao/imamiao.github.io.git"
+    "deploy": "gatsby build && gh-pages -d public -b master --repo https://$SUPER_SECRET@github.com/imamiao/imamiao.github.io.git"
   }
 }
