@@ -13,8 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-        env:
-          SUPER_SECRET: ${{ secrets.DEPLOY_KEY }}
 
       - name: Setup node
         uses: actions/setup-node@v1
@@ -22,7 +20,14 @@ jobs:
           node-version: "14.x"
 
       - name: Pre-Build
-        run: echo $SUPER_SECRET && git config --global user.email "zhaoyimingg@gmail.com" && git config --global user.name "YM" && npm install 
+        shell: bash
+        env:
+          SUPER_SECRET: ${{ secrets.DEPLOY_KEY }}
+        run: |
+          example-command "$SUPER_SECRET" && | 
+          git config --global user.email "zhaoyimingg@gmail.com" && |
+          git config --global user.name "YM" && |
+          npm install 
 
       - name: Build project And deploy
         run:  npm run deploy
