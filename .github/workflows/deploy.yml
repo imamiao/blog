@@ -13,8 +13,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: imamiao/gatsby-action@v1.1
+
+      - name: Setup node
+        uses: actions/setup-node@v1
         with:
-          access-token: ${{ secrets.ACCESS_GITHUB_API_TOKEN }} // 自定义 scret name
-          deploy-branch: master
-          deploy-repo: imamiao.github.io // 留神这里间接是仓库名称
+          node-version: "14.x"
+
+      - name: Build project And deploy
+        run: npm install && npm run deploy
