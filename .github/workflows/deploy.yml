@@ -20,4 +20,6 @@ jobs:
           node-version: "14.x"
 
       - name: Build project And deploy
+        env:
+          SUPER_SECRET: ${{ secrets.ACCESS_GITHUB_API_TOKEN }}
         run: npm install && npm run deploy
