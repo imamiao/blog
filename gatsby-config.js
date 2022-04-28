@@ -3,7 +3,8 @@ module.exports = {
     title: `YMBlog`,
     image: "/gatsby-icon.png",
     description: `YM's Blog`,
-    siteUrl: `https://imamiao.github.io/`,
+    //siteUrl: `https://imamiao.github.io/`,
+    siteUrl: `https://my.b2a1.cn/`,
     social: {
       douban: "#",
       email: "#",
