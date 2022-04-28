@@ -22,7 +22,7 @@ module.exports = {
       { url: "/tags/", label: "标签" },
       { url: "/about", label: "About" },
     ],
-    footerHTML: `© 2020 <a href="https://github.com/keithnull">Keith Null</a> All rights reserved.<br/><a class="text-color" href="https://beian.miit.gov.cn" target="_blank">豫ICP备18021952号</a>`,
+    footerHTML: `© 2022 <a href="https://github.com/imamiao">YM</a> All rights reserved.<br/><a class="text-color" href="https://beian.miit.gov.cn" target="_blank">豫ICP备18021952号</a>`,
     dateFormat: `YYYY-MM-DD`,
     language: `zh`,
   },
@@ -127,7 +127,7 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
-            title: "清风朗月",
+            title: "YMBlog",
           },
         ],
       },
