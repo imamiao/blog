@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `YMBlog`,
+    title: `AB技术分享`,
     image: "/gatsby-icon.png",
-    description: `YM's Blog`,
+    description: `AB技术分享`,
     //siteUrl: `https://imamiao.github.io/`,
     siteUrl: `https://my.b2a1.cn/`,
     social: {
@@ -127,7 +127,7 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
-            title: "YMBlog",
+            title: "AB技术分享",
           },
         ],
       },
