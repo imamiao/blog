@@ -22,16 +22,7 @@ const Sidebar = ({ toc }) => {
               label
             }
             social {
-              douban
               email
-              facebook
-              github
-              instagram
-              linkedin
-              rss
-              telegram
-              twitter
-              youtube
             }
             footerHTML
           }
@@ -39,6 +30,16 @@ const Sidebar = ({ toc }) => {
       }
     `
   )
+//douban
+//email
+//facebook
+//github
+//instagram
+//linkedin
+//rss
+//telegram
+//twitter
+//youtube
   const [open, setOpen] = useState(false)
 
   const clickHandler = () => {

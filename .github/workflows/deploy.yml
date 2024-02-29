@@ -37,4 +37,6 @@ jobs:
           #publish_branch: master
           #publish_dir: ./public
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          external_repository: imamiao/imamiao.github.io
+          publish_branch: master
           publish_dir: ./public

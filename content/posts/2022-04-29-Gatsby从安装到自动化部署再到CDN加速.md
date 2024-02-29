@@ -1,22 +1,22 @@
 ---
 title: Gatsby从安装到自动化部署再到访问加速
-description: Gatsby是一个基于React实现的静态博客框架。本文介绍Gatsby的安装，启动，部署到Github Pages，利用Github Actions自动编译部署，自定义域名，利用腾讯云CDN进行访问加速这几方面进行介绍，可以说是从0到1的保姆式教程。
+description: Gatsby是一个基于React实现的静态网站框架。本文介绍Gatsby的安装，启动，部署到Github Pages，利用Github Actions自动编译部署，自定义域名，利用腾讯云CDN进行访问加速这几方面进行介绍，可以说是从0到1的保姆式教程。
 tags:
   - Gatsby
   - 技术
   - Github pages
   - Github Actions
   - 中文
-image: "https://tva3.sinaimg.cn/large/d87c1362ly1h1qmt80ck2j215o0kun0a.jpg"
+image: "https://raw.githubusercontent.com/imamiao/pic/main/d87c1362ly1h1qmt80ck2j215o0kun0a.jpg"
 slug: "/posts/using-gatsby/"
-noComments: false
+noComments: true
 ---
 
 
 ### Gatsby简介  
 
 引用一下Gatsby官网的介绍：*[Gatsby](https://github.com/gatsbyjs/gatsby) is a free and open source framework based on React that helps developers build blazing fast websites and apps.*。  
-Gatsby是一个基于React实现的开源的静态博客框架，你可以使用Markdown语言来进行创作，使用Gatsby编译为纯静态页面，然后部署到任何支持部署静态资源的地方。如果你对博客框架有所了解，那么它和基于Vue的VuePress，基于Node.js的Hexo的功能相似。  
+Gatsby是一个基于React实现的开源的静态网页框架，你可以使用Markdown语言来进行创作，使用Gatsby编译为纯静态页面，然后部署到任何支持部署静态资源的地方。如果你对网站框架有所了解，那么它和基于Vue的VuePress，基于Node.js的Hexo的功能相似。  
 
 ### 安装，启动  
 
