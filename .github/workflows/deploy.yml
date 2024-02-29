@@ -32,7 +32,9 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          personal_token: ${{ secrets.DEPLOY_KEY }}
-          external_repository: imamiao/imamiao.github.io
-          publish_branch: master
+          #personal_token: ${{ secrets.DEPLOY_KEY }}
+          #external_repository: imamiao/imamiao.github.io
+          #publish_branch: master
+          #publish_dir: ./public
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
